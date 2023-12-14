@@ -5,6 +5,7 @@ import lombok.Data;
 import java.time.LocalDate;
 @Data
 public class NguoiDungDTO {
+    private int id;
     private String tenTaiKhoan;
     private String email;
     private String soDienThoai;

@@ -11,6 +11,7 @@ import java.util.Set;
 
 @Data
 public class PhongBanDTO {
+    private int id;
     private int loaiPhongBan;
     private String code;
     private String tenPhongBan;

@@ -43,6 +43,7 @@ public class SecurityConfig {
                         .requestMatchers("/auth/**").permitAll()
                         .requestMatchers("/nguoidung/**").permitAll()
                         .requestMatchers("/phongban/**").permitAll()
+                        .requestMatchers("/phieuxemnha/**").permitAll()
 //                        .requestMatchers("/nguoidung/permit/**").hasAnyAuthority(RoleEnums.ADMIN.name(), RoleEnums.MOD.name())
 //                        .requestMatchers("/nguoidung/add/**").hasAnyRole(RoleEnums.ADMIN.name(), RoleEnums.MANAGER.name())
                         .anyRequest().authenticated())

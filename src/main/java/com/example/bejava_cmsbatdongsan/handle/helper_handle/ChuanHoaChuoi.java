@@ -1,4 +1,4 @@
-package com.example.bejava_cmsbatdongsan.handle;
+package com.example.bejava_cmsbatdongsan.handle.helper_handle;
 
 import org.springframework.stereotype.Component;
 

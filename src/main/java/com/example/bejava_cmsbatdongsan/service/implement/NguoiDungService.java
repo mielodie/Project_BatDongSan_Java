@@ -1,6 +1,6 @@
 package com.example.bejava_cmsbatdongsan.service.implement;
 
-import com.example.bejava_cmsbatdongsan.handle.ChuanHoaChuoi;
+import com.example.bejava_cmsbatdongsan.handle.helper_handle.ChuanHoaChuoi;
 import com.example.bejava_cmsbatdongsan.handle.email_handle.Validate;
 import com.example.bejava_cmsbatdongsan.payload.converter.NguoiDungConverter;
 import com.example.bejava_cmsbatdongsan.payload.dto.nguoidungdto.NguoiDungDTO;
@@ -10,12 +10,10 @@ import com.example.bejava_cmsbatdongsan.repository.NguoiDungRepo;
 import com.example.bejava_cmsbatdongsan.repository.PhongBanRepo;
 import com.example.bejava_cmsbatdongsan.service.iservice.iNguoiDungService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import javax.management.RuntimeErrorException;
 import java.net.HttpURLConnection;
 import java.time.LocalDate;
 

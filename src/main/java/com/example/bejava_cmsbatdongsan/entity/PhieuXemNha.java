@@ -3,6 +3,7 @@ package com.example.bejava_cmsbatdongsan.entity;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,13 +14,14 @@ import java.time.LocalDate;
 @Table(name = "phieuxemnha_tbl")
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class PhieuXemNha extends BaseEntity{
     @Column(name = "tenkhachhang")
     private String tenKhachHang;
     @Column(name = "sdtkhachhang")
     private String sdtKhachHang;
     @Column(name = "khachhangid")
-    private String khachHangId;
+    private int khachHangId;
     @Column(name = "anhkhachhang1")
     private String anhKhachHang1;
     @Column(name = "anhkhachhang2")
